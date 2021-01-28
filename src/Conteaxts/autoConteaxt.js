@@ -12,7 +12,7 @@ export const AutoProvider = ({ children }) => {
 	const [currentUser, setCurrentUser] = useState();
 	const [loading, setLoading] = useState(true);
 	const history = useHistory();
-	const baseUrl = 'https://cookeat-backend.herokuapp.com/';
+	const baseUrl = 'https://cookeat-backend.herokuapp.com';
 
 	//signUp
 	const signupUser = async (formInfo) => {

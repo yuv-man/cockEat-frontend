@@ -1,6 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import axios from 'axios';
-import jwt_decode from 'jwt-decode';
+// import jwt_decode from 'jwt-decode';
+import jwt from 'jsonwebtoken'
 import { useHistory } from 'react-router-dom';
 const AuthContext = React.createContext();
 
@@ -22,7 +23,7 @@ export const AutoProvider = ({ children }) => {
 			const res = await axios.post(`${baseUrl}/auth/signup`, formInfo);
 			if (res.data) {
 				localStorage.setItem('token', res.data);
-				const user = jwt_decode(res.data).user;
+				const user = jwt.decode(res.data).user;
 				localStorage.setItem('user', user._id);
 				setCurrentUser(user);
 				history.push('/');
@@ -38,7 +39,7 @@ export const AutoProvider = ({ children }) => {
 			const res = await axios.post(`${baseUrl}/auth/login`, formInfo);
 			if (res.data) {
 				localStorage.setItem('token', res.data);
-				const user = jwt_decode(res.data).user;
+				const user = jwt.decode(res.data).user;
 				localStorage.setItem('user', user._id);
 				setCurrentUser(user);
 				history.push('/');

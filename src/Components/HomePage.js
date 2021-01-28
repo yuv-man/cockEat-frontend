@@ -19,9 +19,9 @@ const HomePage = () => {
 		const user = await localStorage.getItem('user');
 		let res;
 		if (user) {
-			res = await fetch(`http://localhost:5000/recipes/filter/${user}`);
+			res = await fetch(`https://cookeat-backend.herokuapp.com/recipes/filter/${user}`);
 		} else {
-			res = await fetch(`http://localhost:5000/recipes`);
+			res = await fetch(`http://https://cookeat-backend.herokuapp.com/recipes`);
 		}
 		const data = await res.json();
 		setRecipes(data);

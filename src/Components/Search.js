@@ -5,7 +5,7 @@ const Search = (props) => {
 	const [search, setSearch] = useState('');
 
 	async function searchRecipes() {
-		const res = await fetch(`http://localhost:5000/recipes?search=${search}`);
+		const res = await fetch(`https://cookeat-backend.herokuapp.com/recipes?search=${search}`);
 		const data = await res.json();
 		props.setRecipes(data);
 	}

@@ -21,7 +21,7 @@ const HomePage = () => {
 		if (user) {
 			res = await fetch(`https://cookeat-backend.herokuapp.com/recipes/filter/${user}`);
 		} else {
-			res = await fetch(`http://https://cookeat-backend.herokuapp.com/recipes`);
+			res = await fetch(`https://cookeat-backend.herokuapp.com/recipes`);
 		}
 		const data = await res.json();
 		setRecipes(data);

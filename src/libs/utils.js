@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://cookeat-backend.herokuapp.com/';
 
 const loadRecipe = async (id) => {
 	const response = await fetch(`${BASE_URL}/recipes/${id}`);

@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Trajan";
+  src: local("Trajan"), url(../fonts//Trajan.ttf) format("truetype");
+}
+
+.my-recipe-cards-container {
+  margin-top: 50px;
+  padding: 50px 30px;
+}
+
+.my-recipe-cards-container .card {
+  border-radius: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  background-image: url('../img/backgrounds/cards-bg.jpg');
+  border: 2px solid #8A2604;
+  overflow: hidden;
+}
+
+.my-recipe-cards-container img {
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+  width: 30rem;
+  height: 230px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+.recipe-cards-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 30px;
+  color: white;
+  font-family: "Trajan";
+  color: lightgray;
+  font-size: 19px;
+}
+
+#cards-like-button {
+  background-color: #C7B653;
+  border: none;
+  padding: 7px;
+  font-family: "arial";
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 194px;
+  right: 0px;
+}
+
+.card-information-container {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  position: relative;
+}
+
+.card-dish-type {
+  border-right: 2px solid #903403;
+  width: 33%;
+}
+
+#world-icon {
+  font-size: 23px;
+  margin: 0 5px 3px 0;
+  color: #d1c28b;
+}
+
+.card-dish-time {
+  border-right: 2px solid #903403;
+  width: 28%;
+  text-align: center;
+}
+
+#time-icon {
+  font-size: 23px;
+  margin: 0 5px 3px 0;
+  color: #d1c28b;
+  text-align: center;
+}
+
+.card-dish-level {
+  width: 37%;
+  text-align: center;
+}
+
+#level-icon {
+  font-size: 23px;
+  margin: 0 5px 3px 0;
+  color: #d1c28b;
+}
+
+.card-links {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+#show-more-card button {
+  background: none;
+  border: none;
+  color: #A4420B;
+  font-weight: bold;
+}
+
+a.show-more-card {
+  padding-top: 15px;
+  color: lightgray;
+  align-items: baseline;
+}
+
+button.show-more-card.btn.btn-primary {
+  background-color: #A4420B;
+  border: none;
+}
+
+button.show-more-card.btn.btn-primary:hover {
+  background-color: #585300;
+  border: none;
+}
+
+.delete-recipe-modal .modal-dialog  {
+  transform: translate(0, -50%);
+  top: 50%;
+  margin: 0 auto;
+}
+
+.delete-recipe-modal .modal-header {
+  background-color: darkgray;
+  border-bottom: none;
+
+}
+
+.delete-recipe-modal .modal-body {
+  background-color: lightgray;
+  border-bottom: none;
+}
+
+.delete-recipe-modal .modal-footer {
+  background-color: lightgray;
+  border-top: none;
+}
+
+#remove-recipe {
+  background-color: black;
+  color: lightgray;
+  border: 1px solid black;
+}
+
+#remove-recipe:hover {
+  color: black;
+  background-color: #A4420B;
+  border: 1px solid #A4420B;
+}

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Trajan";
+    src: local("Trajan"), url(../fonts//Trajan.ttf) format("truetype");
+}
+
+.saved-recipes-pagewrapper {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-image: url("../img/backgrounds/bg5.jpg");
+}
+
+.saved-recipes-pagewrapper h4 {
+    text-align: center;
+    padding-top: 50px;
+    font-family: "Trajan";
+    color: white;
+}
+
+#no-saved-recipes {
+    color: lightgray;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-family: "Trajan";
+}

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Trajan";
+    src: local("Trajan"), url(../fonts//Trajan.ttf) format("truetype");
+}
+
+.registration-carousel span.button-next {
+    margin-top: 666px;
+    margin-right: 550px;
+    font-family: "Trajan";
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.registration-carousel span.button-prev {
+    margin-top: 650px;
+    margin-left: 550px;
+    font-family: "Trajan";
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.registration-carousel {
+    width: 100%;
+    max-width: none;
+    height: auto;
+}
+
+.personalized-experience {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.registration-carousel h3 {
+    color: white;
+    font-family: "Trajan";
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}

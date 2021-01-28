@@ -1,6 +1,9 @@
 {
   "name": "culinary-project",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.15.0"
+  },
   "private": true,
   "dependencies": {
     "@emotion/css": "^11.1.3",

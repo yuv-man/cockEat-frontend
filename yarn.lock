@@ -7748,7 +7748,7 @@ no-case@^3.0.3:
     lower-case "^2.0.1"
     tslib "^1.10.0"
 
-node-base64@0.0.1:
+node-base64@0.0.1, node-base64@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/node-base64/-/node-base64-0.0.1.tgz#ee3e095f97e9f4d72fb3dea98bcb2d25c8716b03"
   integrity sha1-7j4JX5fp9Ncvs96pi8stJchxawM=

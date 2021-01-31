@@ -11,8 +11,6 @@ const SignUpModal = () => {
 
     const history = useHistory();
 
-    const handleShow = () => setShow(true);
-
     const handleClose = () => {
         setShow(false);
         history.push("/home");

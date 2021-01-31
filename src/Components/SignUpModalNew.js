@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
-import { useHistory, Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import '../styles/LoginModal.css';
-import cookEatLogo from '../img/logo/cookEatLogo.png';
 import { Modal, Form, Button, Col } from 'react-bootstrap';
 import { useAuth } from '../Conteaxts/autoConteaxt';
 import { useForm } from 'react-hook-form';
@@ -101,9 +100,6 @@ const SignUpModalNew = () => {
 								placeholder='Enter email'
 								onChange={handleChange}
 								required
-								// ref={register({
-								// 	pattern: /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g,
-								// })}
 							/>
 							<div className='error-box'>
 								{errors.email && errors.email.type === 'pattern' && (
@@ -121,7 +117,6 @@ const SignUpModalNew = () => {
 								placeholder='Password'
 								onChange={handleChange}
 								required
-								// ref={register({ pattern: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm })}
 							/>
 							<Form.Control.Feedback type='invalid'>Password required</Form.Control.Feedback>
 						</Form.Group>
@@ -134,9 +129,6 @@ const SignUpModalNew = () => {
 								placeholder='Confirm Password'
 								onChange={handleChange}
 								required
-								// ref={register({
-								// 	validate: (value) => value === password.current || 'The passwords do not match',
-								// })}
 							/>
 							{errors.repatePass && <p className='error-field'>{errors.repatePass.message}</p>}
 							<div className='error-box'>

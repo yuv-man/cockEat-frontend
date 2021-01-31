@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Form, InputGroup, FormControl } from "react-bootstrap";
+import { Button, InputGroup, FormControl } from "react-bootstrap";
 import "../styles/AddRecipe.css";
 const Steps = ({ removeStep, onStepChange, id, dealtas }) => {
   return (
@@ -9,7 +9,6 @@ const Steps = ({ removeStep, onStepChange, id, dealtas }) => {
       </InputGroup.Prepend>
       <FormControl
         as="textarea"
-        // value={dealtas}
         onChange={onStepChange}
         required
       />

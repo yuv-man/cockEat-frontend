@@ -1,6 +1,5 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import axios from 'axios';
-// import jwt_decode from 'jwt-decode';
 import jwt from 'jsonwebtoken'
 import { useHistory } from 'react-router-dom';
 const AuthContext = React.createContext();
@@ -11,7 +10,6 @@ export const useAuth = () => {
 
 export const AutoProvider = ({ children }) => {
 	const [currentUser, setCurrentUser] = useState();
-	const [loading, setLoading] = useState(true);
 	const history = useHistory();
 	// const baseUrl = 'http://localhost:5000';
 	const baseUrl = `https://cookeat-backend.herokuapp.com`

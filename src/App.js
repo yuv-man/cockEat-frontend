@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { AutoProvider } from "./Conteaxts/autoConteaxt";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
@@ -8,14 +8,10 @@ import ProfileSettings from "./Components/ProfileSettings";
 import LoginModal from "./Components/LoginModal";
 import PrivateRoute from "./Components/Routes/privateRoute/PrivateRoute";
 import SignUpModal from "./Components/SignUpModal";
-// import SignUpModalNew from './Components/SignUpModalNew';
-
 import AddRecipe from "./Components/AddRecipe";
-// import Recipe from "./Components/Recipe";
 import MyRecipes from "./Components/MyRecipes";
 import SavedRecipes from "./Components/SavedRecipes";
 import RecipePage from "./Components/RecipePage";
-// import Footer from './Components/Footer'; // Need to implement
 
 const App = () => {
   return (
@@ -31,9 +27,7 @@ const App = () => {
               <Route exact path="/recipe/:id">
                 <RecipePage />
               </Route>
-              {/* <PrivateRoute path="/recipe/:id" component={RecipePage} /> */}
               <PrivateRoute path="/my-recipes" component={MyRecipes} />
-              {/* <PrivateRoute path="/recipes" component={Recipe} /> */}
               <PrivateRoute path="/saved-recipes" component={SavedRecipes} />
               <PrivateRoute path="/add-recipe/:update?" component={AddRecipe} />
               <PrivateRoute
@@ -53,7 +47,6 @@ const App = () => {
                 <HomePage />
               </Route>
             </Switch>
-            {/* <Footer /> */}
           </header>
         </div>
       </AutoProvider>
